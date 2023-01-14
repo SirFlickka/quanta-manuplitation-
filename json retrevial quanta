@@ -1,0 +1,23 @@
+first, you need to create an account with the quanta data API. Once you have an account, you can sign in to your account and access your API credentials.
+
+Next, open a command prompt window and navigate to the directory where you saved your quanta data API credentials.
+
+To query data from a quanta server, you need to use the quanta data API call. 
+The following command queries data from the quanta server located at example.com:
+
+curl https://example.com/api/v1/data/quantum
+
+The output of this command will return a JSON object that contains data about the quantum samples in the database. 
+You can use the various fields in the JSON object to explore the data.
+index.js?bee7:22
+
+
+To query quanta data from an API on Windows, you can use the curl command line tool. To install curl, you can use the following command:
+
+curl -s https://raw.githubusercontent.com/curl/ curl/master/install.sh
+
+Once curl is installed, you can use the following command to query quanta data from an API:
+
+curl -X GET https://api.quantam.com/v1/data?limit=5
+
+This command will return a list of data records for the given limit.
