@@ -1,0 +1,31 @@
+import numpy as np
+
+from pyspark.sql import SparkSession
+
+from pyspark.sql.functions import *
+
+
+
+def qubit_retrieve(q, idx):
+
+# Retrieve a qubit from the q-bit storage
+
+try:
+
+return np.array(q)
+
+except IndexError:
+
+print("Error retrieving qubit from storage: {}" .format(idx))
+
+return None
+
+
+
+def qubit_store(q, idx, value):
+
+# Store a qubit at the given index in the q-bit storage
+
+q[idx] = value
+
+print("Storing qubit at index {} with value {}".format(idx, value))
