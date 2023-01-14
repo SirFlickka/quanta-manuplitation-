@@ -1,0 +1,113 @@
+package quantum;
+
+import processing.serial.*;
+
+import processing.serial.uart.*;
+
+import processing.serial.uart.uartcomm.*;
+
+import processing.serial.uart.uartport.*;
+
+import processing.serial.*;
+
+import java.util.*;
+
+public class ModularMultiplicationStorageDevice {
+
+private static final int DEFAULT_PORT = 0;
+
+private static final int UART_PORT = 1;
+
+private static final int UART_TX = 2;
+
+private static final int UART_RX = 3;
+
+private static final int LED_PORT = 4;
+
+private static final int LED_PIN = 5;
+
+private static final int GND_PIN = 6;
+
+private static final int MODE_PIN = 7;
+
+private static final int START_PIN = 8;
+
+private static final int STOP_PIN = 9;
+
+private static final int MULTIPLIER_PIN = 10;
+
+private static final int MULTIPLIER_VAL = 11;
+
+private static final int MODEM_PIN = 12;
+
+private static final int MODEM_VAL = 13;
+
+private static final int STATUS_PIN = 14;
+
+private static final int STATUS_VAL = 15;
+
+private static final int CLOCK_PIN = 16;
+
+private static final int CLOCK_VAL = 17;
+
+private ModularMultiplicationStorageDevice() {
+
+}
+
+public void start() {
+
+}
+
+public void stop() {
+
+}
+
+public void setMode(int mode) {
+
+this.mode = mode;
+
+}
+
+public void setPort(int port) {
+
+this.port = port;
+
+}
+
+public void setMultiplier(int multiplier) {
+
+this.multiplier = multiplier;
+
+}
+
+public void setModem(int modem) {
+
+this.modem = modem;
+
+}
+
+public void setStatus(int status) {
+
+this.status = status;
+
+}
+
+public void setClock(int clock) {
+
+this.clock = clock;
+
+}
+
+public void setLED(int led) {
+
+this.led = led;
+
+}
+
+public void setGND(int gnd) {
+
+this.gnd = gnd;
+
+}
+
+}
